@@ -1,4 +1,4 @@
-WADL API Generator
+WADL PYTHON API Generator
 =============
 
 Description
