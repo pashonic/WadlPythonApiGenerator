@@ -39,7 +39,7 @@ wadlManager = WadlApiGenerator.WadlManager([Link to WADL via http])
 
 Below line creates a connection and generates all the python function calls for each webservice resource.
 ```
-connection = GetConnection(username, password)
+connection = wadlManager.GetConnection(username, password)
 ```
 
 Below line invokes a specific resource and request type. Python function calls are generated using a [Resource]_[Request Type] format. Resource sub directories are separated using an underscore. The request type is always added to the end of the function call name. URL Parameter's and XML object variable names are automatically matched with data read from WADL XML.
