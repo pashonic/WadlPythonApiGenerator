@@ -28,7 +28,7 @@ The most common use case is to invoke a specific webservice resource. See exampl
 import WadlApiGenerator
 
 wadlManager = WadlApiGenerator.WadlManager([Link to WADL via http])
-connection = GetConnection(username, password)
+connection = wadlManager.GetConnection(username, password)
 connection.[Resource]_[Request Type](urlParameter = value, xmlDataObjectParameter = value)
 ```
 
